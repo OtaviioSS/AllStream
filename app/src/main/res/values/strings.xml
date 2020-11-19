@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AllStream</string>
+    <string name="abrir_youtube">Abrir youtube</string>
+    <string name="abrir_twitch_tv">Abrir Twitch tv</string>
+    <string name="abrir_booyah">Abrir Booyah</string>
+    <string name="abrir_nimo_tv">Abrir nimo tv</string>
+    <string name="nimo_tv">Nimo TV</string>
+    <string name="booyah">BOOYAH!</string>
+    <string name="twitch">Twitch</string>
+    <string name="youtube">YouTube</string>
+    <string name="escolha_onde_voc_que_assistir">Escolha onde você quer assistir</string>
+    <string name="titulo_all_stream">Titulo all stream</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="title_activity_facebook">Activity_facebook</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>
