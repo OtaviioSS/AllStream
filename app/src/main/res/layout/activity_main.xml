@@ -4,125 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+
     tools:context=".MainActivity">
 
     <ImageView
 
-        android:id="@+id/logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:contentDescription="@string/titulo_all_stream"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/imgYoutube"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/imgYoutube"
-        android:elevation="5dp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/backgroundyoutube"
-        android:contentDescription="@string/abrir_youtube"
-        android:padding="25dp"
-        android:src="@drawable/ic_youtube"
-        app:layout_constraintBottom_toTopOf="@id/imgNimo"
-        app:layout_constraintEnd_toStartOf="@+id/imgTwitch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/youtube"
-        android:textColor="#ffffff"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/imgYoutube"
-        app:layout_constraintStart_toStartOf="@id/imgYoutube"
-        app:layout_constraintTop_toBottomOf="@+id/imgYoutube" />
+
+        android:contentDescription="@string/abrir_youtube"
+        android:src="@drawable/btn_youtube"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgNimo"
+        app:layout_constraintTop_toBottomOf="@+id/imgTwitch" />
+
 
     <ImageView
         android:id="@+id/imgTwitch"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:elevation="5dp"
-        android:background="@drawable/backgroundtwitch"
-        android:contentDescription="@string/abrir_twitch_tv"
-        android:padding="25dp"
-        android:src="@drawable/ic_twitch"
-        app:layout_constraintBottom_toTopOf="@+id/imgNimo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgYoutube"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/twitch"
-        android:textColor="#ffffff"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/imgTwitch"
-        app:layout_constraintStart_toStartOf="@id/imgTwitch"
-        app:layout_constraintTop_toBottomOf="@id/imgTwitch" />
+        android:contentDescription="@string/abrir_twitch_tv"
+        android:src="@drawable/btn_twitch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imgYoutube"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgNimo" />
 
 
     <ImageView
         android:id="@+id/imgNimo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:padding="25dp"
-        android:background="@drawable/backgrondnimo"
-        android:contentDescription="@string/abrir_nimo_tv"
-        android:src="@drawable/nimoicon"
-        android:elevation="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
-        app:layout_constraintEnd_toStartOf="@+id/imgFace"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgTwitch" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nimo_tv"
-        android:textColor="#ffffff"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/imgNimo"
-        app:layout_constraintStart_toStartOf="@id/imgNimo"
-        app:layout_constraintTop_toBottomOf="@id/imgNimo" />
+        android:contentDescription="@string/abrir_nimo_tv"
+        android:src="@drawable/btn_nimo_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imgYoutube"
+        app:layout_constraintEnd_toStartOf="@+id/imgTwitch"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imgFace"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:padding="25dp"
-        android:background="@drawable/backgroundfacebook"
-        android:contentDescription="@string/abrir_nimo_tv"
-        android:src="@drawable/ic_icons_facebook_gaming"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:elevation="5dp"
-        app:layout_constraintStart_toEndOf="@+id/imgNimo"
-        app:layout_constraintTop_toBottomOf="@+id/imgTwitch" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nimo_tv"
-        android:textColor="#ffffff"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/imgFace"
-        app:layout_constraintStart_toStartOf="@id/imgFace"
-        app:layout_constraintTop_toBottomOf="@id/imgFace" />
+        android:contentDescription="@string/abrir_nimo_tv"
+        android:src="@drawable/btn_facebook_gaming"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toStartOf="@+id/imgYoutube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNimo" />
 
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -134,7 +68,7 @@
         ads:layout_constraintBottom_toBottomOf="parent"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toBottomOf="@id/imgNimo" />
+        ads:layout_constraintTop_toBottomOf="@id/imgYoutube" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

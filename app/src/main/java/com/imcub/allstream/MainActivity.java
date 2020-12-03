@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView nimotv;
     private ImageView facebook;
     private InterstitialAd mInterstitialAd;
-    private AdView mAdView;
+    AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +44,9 @@ public class MainActivity extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
-
         mAdView.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
@@ -84,11 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-6840447934899672/6550228848");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-
         iniciarcomponentes();
         cliques();
     }
@@ -100,18 +92,7 @@ public class MainActivity extends AppCompatActivity {
         facebook.setOnClickListener(abrirFacebook);
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
 
-        if (mAdView != null){
-            mAdView.pause();
-        }
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
-        }    }
 
 
 
@@ -155,19 +136,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (mAdView != null){
-            mAdView.pause();
-        }
-    }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (mAdView != null){
-            mAdView.pause();
-        }
-    }
+
+
 }
